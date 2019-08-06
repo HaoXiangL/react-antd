@@ -1,0 +1,28 @@
+@min-font-size: 10px;
+@max-font-size: 16px;
+@min-screen: 375px;
+@max-screen: 768px;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 20px 0;
+  line-height: 40px;
+  // color: #d7d7d7d7;
+  color: black;
+  font-size: @min-font-size;
+}
+
+@media (min-width: @min-screen) and (max-width: @max-screen) {
+  .footer {
+    font-size: calc(@min-font-size + (16 - 10) * ((100vw - @min-screen) / (768 - 375)));
+  }
+}
+
+@media (min-width: @max-screen) {
+  .footer {
+    font-size: @max-font-size;
+  }
+}

@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  .nav-left {
+    // width: 15%;
+    // min-width: 180px;
+    background-color: #001529;
+    height: calc(100vh);//运算方法calc, vh是代表%百分比的意思
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh);
+    background-color: #f1f3f5;
+    //自动出滚动条
+    overflow: auto;
+  }
+  .content{
+    flex: 1;
+    position: relative;
+    padding: 20px;
+  }
+}

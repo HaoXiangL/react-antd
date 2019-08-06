@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import './App.less';
 
-export default class App extends Component {
+export default class Login extends Component {
   render() {
     return (
       <div>
-         {this.props.children}
+        Login page
       </div>
     )
   }
